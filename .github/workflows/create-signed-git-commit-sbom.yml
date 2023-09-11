@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_NAME: ${{ github.repository }}:${{ github.sha }}
-  LOGICAL_APP_NAME: scribe-demo-product
+  LOGICAL_APP_NAME: scribe-product
   AUTHOR_NAME: McCoy Pauley
   AUTHOR_EMAIL: info@scribesecurity.com
   AUTHOR_PHONE: 111-1111-11
@@ -37,7 +37,7 @@ jobs:
         target: 'git:.'
         scribe-enable: true
         components: packages,files,dep
-        product-key: scribe-demo-prod-v1
+        product-key: scribe-prod-v1
         scribe-client-id: ${{ secrets.CLIENT_ID }}
         scribe-client-secret: ${{ secrets.CLIENT_SECRET }}
         label: is_git_commit
